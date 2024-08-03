@@ -1,7 +1,7 @@
 import conf from "../conf/conf";
 import { Client, Account, ID } from "appwrite";
 
-class AuthService {
+export class AuthService {
    client = new Client()
    account;
    constructor(){
@@ -61,9 +61,5 @@ export default authService
 
 
 
-const client = new Client()
-    .setEndpoint(conf.appwriteURL) // Your API Endpoint
-    .setProject(conf.appwriteProjectId);               // Your project ID
 
-const account = new Account(client);
 
